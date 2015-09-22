@@ -1,16 +1,16 @@
 from setuptools import setup, find_packages
 import os
 
-readme_filename = os.path.join('src', 'gk', 'crypto', 'README.txt')
+readme_filename = os.path.join('src', 'gk', 'backends', 'README.txt')
 long_description = open(readme_filename).read() + '\n\n' + \
                    open('CHANGES.txt').read()
 
 test_requires = [
     ]
 
-setup(name='gk.crypto',
+setup(name='gk.backends',
       version='1.0',
-      description="Crypto system for Gatekeeper",
+      description="Backends system for Gatekeeper",
       long_description = long_description,
       classifiers=['Environment :: Web Environment',
                    'Intended Audience :: Developers',
@@ -18,7 +18,7 @@ setup(name='gk.crypto',
                    'Programming Language :: Python',
                    'Framework :: Zope3',
                    ],
-      keywords='crypto gatekeeper',
+      keywords='backends gatekeeper',
       author='Novareto',
       author_email='grok-dev@zope.org',
       url='http://grok.zope.org',
