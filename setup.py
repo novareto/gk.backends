@@ -30,5 +30,6 @@ setup(name='gk.backends',
       zip_safe=False,
       extras_require={'test': test_requires},
       install_requires=[
+          'zope.interface',
           ],
       )
